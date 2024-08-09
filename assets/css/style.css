@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-image: url('/assets/images/hero-img.png');
+    background-image: url('https://raw.githubusercontent.com/prasetyoedi/team/master/assets/images/hero-img.png');
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -206,7 +206,7 @@ footer li {
 
 @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
     header {
-        background-image: url('/assets/images/hero-img-portrait.png');
+        background-image: url('https://raw.githubusercontent.com/prasetyoedi/team/master/assets/images/hero-img-portrait.png');
         background-size: cover;
         width: 100%;
         height: 100vh;
@@ -277,7 +277,7 @@ footer li {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     header {
-        background-image: url('/assets/images/hero-img.png');
+        background-image: url('https://raw.githubusercontent.com/prasetyoedi/team/master/assets/images/hero-img.png');
         background-size: cover;
         width: 100%;
         height: 100%;
