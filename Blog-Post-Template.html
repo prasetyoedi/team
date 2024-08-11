@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="blog">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Landing_page.html">
+                    <img src="assets/images/logo-blog.png" alt="gambar logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-blog"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: var(--Dark-Blue, #232340);">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: var(--Dark-Blue, #232340);">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: var(--Dark-Blue, #232340);">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: var(--Dark-Blue, #232340);">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="btn-get-access">
+                                    <div class="text">Get Access</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 20px;">
+        <div class="title-blog-post">
+            <h1 style="color: var(--Black, #25313C);">Data exported by Team Cloud organization administrators
+                contained private files</h1>
+            <div class="d-flex pt-5">
+                <img src="assets/images/blog/mark.png" alt="gambar avatar" class="img-fluid">
+                <div class="text-avatar">Mark Brooklyn | June 14, 2023</div>
+            </div>
+        </div>
+        <div class="img-blog-post">
+            <img src="assets/images/blog/blog-post.png" alt="" class="img-fluid">
+        </div>
+        <div class="title-blog-post">
+            <div class="paragraph">
+                Administrators of Team Cloud organizations can export public data from their organization via the
+                organization settings menu. The exports include all the data that appears in public streams, and can be
+                used to migrate from Team Cloud to self-hosting Team. Note that exporting private data is a separate
+                process that requires contacting Team Support.
+                <br><br>
+                Due to a bug in the public export code, exports of public data contained all uploaded files, even those
+                from private messages and private streams. This may have allowed organization owners or administrators
+                to extract uploaded files that they were not otherwise allowed to access. The content of non-public
+                messages was never included in public exports.
+                <br><br>
+                This bug has existed since the public export feature was implemented in August 2019. We have deleted all
+                existing Team Cloud exports from our servers, and will be making changes to auto-expire all exports
+                after 7 days in the future. This bug was fixed for self-hosted users in the Team Server 5.4 release.
+                <br><br>
+                We have notified by email all administrators and users in non-deactivated Team Cloud organizations who
+                may have been impacted by this bug. As many organizations have never exported their data, most Team
+                Cloud users were not affected.
+                <br><br>
+                We would like to thank Antoine Benoist for bringing this issue to our attention.
+            </div>
+            <div class="d-flex" style="margin-top: 80px; margin-bottom: 100px;">
+                <img src="assets/images/blog/mark-written.png" alt="gambar avatar" class="mt-4"
+                    style="width: 72px; height: 72px;">
+                <div class="ms-4" style="color: var(--Soft-Violet, #C897E4);
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    letter-spacing: 0.16px;
+                    text-transform: uppercase;">Written by <br>
+                    <span style="color: var(--Dark-Blue, #232340);
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 30px;">Mark Brooklyn</span> <br>
+                    <span style="color: rgba(35, 35, 64, 0.60);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 23px;
+                    letter-spacing: 0.14px;">COO at Team. Author of the upcoming book on <br> Team Management and
+                        Leadership.</span>
+                </div>
+            </div>
+
+            <hr style="background: #BBC8D4; margin-bottom: 100px;">
+
+            <div class="paragraph" style="margin-bottom: 30px;">Join the conversation</div>
+
+            <div class="d-flex">
+                <img src="assets/images/blog/avatarrr.png" alt="" style="width: 72px; height: 72px;">
+                <textarea placeholder="Comments" class="ms-3"></textarea>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer style="background: var(--Dark-Blue, #232340);">
+        <div class="wrap footer">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <img src="assets/images/logo.png" alt="gambar logo">
+                    <div class="caption" style="color: var(--Off-white, #F5F5F5); margin-top: 16px;">
+                        Collaboration platform <br> for mordern team
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-48">
+                    <h3 style="color: var(--Soft-Blue, #5468E7);">Company</h3>
+                    <ul>
+                        <li>Product</li>
+                        <li>Blog</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-48">
+                    <h3 style="color: var(--Soft-Blue, #5468E7);">Features</h3>
+                    <ul>
+                        <li>Screen Sharing</li>
+                        <li>iOS & Android Apps</li>
+                        <li>File Sharing</li>
+                        <li>User Managment</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-48">
+                    <h3 style="color: var(--Soft-Blue, #5468E7);">Contact Us</h3>
+                    <ul>
+                        <li>info@teamapp.com</li>
+                        <li>1-800-200-300</li>
+                        <li>1010 Sunset Blv.
+                            Palo Alto, California</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-5 mt-48">
+                    <h3 style="color: var(--Soft-Blue, #5468E7);">Stay up to date </h3>
+                    <div class="caption mt-3 mb-3" style="color: var(--Off-white, #F5F5F5);">
+                        Subscribe to our newseller
+                    </div>
+                    <div class="input-group btn-email">
+                        <input type="text" class="form-control border-0" placeholder="Email" aria-label="Email">
+                        <span class="input-group-text border-0" style="background-color: white;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M5.20874 13.5H16.3787L11.4987 18.38C11.1087 18.77 11.1087 19.41 11.4987 19.8C11.8887 20.19 12.5187 20.19 12.9087 19.8L19.4987 13.21C19.8887 12.82 19.8887 12.19 19.4987 11.8L12.9187 5.19996C12.7319 5.0127 12.4783 4.90747 12.2137 4.90747C11.9492 4.90747 11.6956 5.0127 11.5087 5.19996C11.1187 5.58996 11.1187 6.21996 11.5087 6.60996L16.3787 11.5H5.20874C4.65874 11.5 4.20874 11.95 4.20874 12.5C4.20874 13.05 4.65874 13.5 5.20874 13.5Z"
+                                    fill="#7676B2" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caption" style="color: var(--Off-white, #F5F5F5); margin-top: 171px; padding-bottom: 40px;">
+                © Copyright Team Inc.
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" class="back-to-top">
+        ↑
+    </button>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

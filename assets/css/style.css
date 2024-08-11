@@ -8,7 +8,7 @@ body {
     font-family: "Lexend Deca", sans-serif;
 }
 
-header {
+#landing-page {
     background-image: url('https://raw.githubusercontent.com/prasetyoedi/team/master/assets/images/hero-img.png');
     background-size: cover;
     width: 100%;
@@ -18,7 +18,7 @@ header {
 header .container-fluid {
     padding-left: 140px;
     padding-right: 140px;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 header .navbar-nav {
@@ -27,7 +27,6 @@ header .navbar-nav {
 
 header .nav-link {
     color: var(--Off-White, #F5F5F5);
-    text-shadow: 0px 8px 16px rgba(35, 35, 64, 0.60);
     font-size: 15px;
     font-weight: 500;
     line-height: 150%;
@@ -45,6 +44,12 @@ header .btn-get-access {
     gap: 8px;
     border-radius: 4px;
     background: rgba(84, 104, 231, 0.50);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+header .btn-get-access:hover {
+    background: rgba(84, 104, 231, 0.80);
+    transform: scale(1.05);
 }
 
 header .btn-get-access .text {
@@ -59,7 +64,7 @@ header .navbar-brand {
     margin-right: 380px;
 }
 
-.navbar-toggler-icon {
+.navbar-landing {
     filter: invert(1);
 }
 
@@ -87,7 +92,6 @@ p {
 }
 
 .btn-email {
-    /* width: 298px; */
     padding: 4px 16px;
     border-radius: 4px;
     border: 2px solid var(--Grayish-Blue, #D1ECFD);
@@ -95,7 +99,6 @@ p {
 }
 
 .btn-email-footer {
-    /* width: 298px; */
     padding: 4px 16px;
     border-radius: 4px;
     border: 2px solid var(--Grayish-Blue, #D1ECFD);
@@ -111,6 +114,13 @@ p {
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
+    cursor: pointer;
+}
+
+
+header .btn-get-early-access:hover {
+    background: rgba(84, 104, 231, 0.80);
+    transform: scale(1.05);
 }
 
 /* main */
@@ -204,8 +214,135 @@ footer li {
     letter-spacing: 0.14px;
 }
 
+
+.product-images {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.product-images:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(84, 104, 231, 0.80);
+    color: #FFF;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Blog */
+.blog-wrap {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.blog-card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 18px 24px 0px rgba(118, 118, 178, 0.28);
+    padding-bottom: 16px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 28px 34px 0px rgba(118, 118, 178, 0.4);
+}
+
+
+.blog-wrap .card-title {
+    color: var(--Soft-Blue, #5468E7);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.blog-wrap .card-text {
+    color: var(--Dark-Blue, #232340);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.14px;
+}
+
+.text-avatar {
+    color: var(--Desaturated-Blue, #7676B2);
+
+    /* Caption/Desktop */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    /* 164.286% */
+    letter-spacing: 0.14px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn-blog {
+    display: flex;
+    width: 200px;
+    padding: 10px 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: rgba(84, 104, 231, 0.50);
+
+    color: var(--Dark-Blue, #232340);
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 80px;
+}
+
+
+/* Blog Post Template */
+.title-blog-post {
+    padding: 50px 338px 50px 338px;
+}
+
+.img-blog-post {
+    padding: 20px 239px 20px 239px;
+}
+
+textarea {
+    border-radius: 4px;
+    border: 2px solid var(--Desaturated-Blue, #7676B2);
+    background: var(--Off-White, #F5F5F5);
+    width: 692px;
+    height: 199px;
+}
+
+textarea::placeholder {
+    color: rgba(35, 35, 64, 0.90);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.14px;
+    padding-left: 10px;
+}
+
 @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-    header {
+    #landing-page {
         background-image: url('https://raw.githubusercontent.com/prasetyoedi/team/master/assets/images/hero-img-portrait.png');
         background-size: cover;
         width: 100%;
@@ -272,11 +409,22 @@ footer li {
         margin-top: 48px;
     }
 
+    .blog-wrap {
+        margin-top: -20px;
+    }
+
+    .title-blog-post {
+        padding: 50px 30px 50px 30px;
+    }
+
+    .img-blog-post {
+        padding: 20px 0 20px 0;
+    }
 }
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    header {
+    #landing-page {
         background-image: url('https://raw.githubusercontent.com/prasetyoedi/team/master/assets/images/hero-img.png');
         background-size: cover;
         width: 100%;
@@ -345,5 +493,17 @@ footer li {
 
     .mt-48 {
         margin-top: 48px;
+    }
+
+    .blog-wrap {
+        margin-top: -20px;
+    }
+
+    .title-blog-post {
+        padding: 50px 30px 50px 30px;
+    }
+
+    .img-blog-post {
+        padding: 20px 0 20px 0;
     }
 }
